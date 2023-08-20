@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=Pacifico&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #222f3e;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 25px;
+}
+
+.search-box h2 {
+    color: #fff;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #fff;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.movies .box {
+    width: 280px;
+    height: 380px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.movies .box img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(0);
+    transition: 0.5s;
+
+}
+.movies .box:hover .content {
+    transition: 0.5s;
+    transform: scale(1);
+}
+.content .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px 10px 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.content .text p {
+    font-size: 22px;
+}
+
+.content .text .rate {
+    color: rgb(255, 109, 109);
+}
+
+.content p {
+    font-size: 16px;
+}
